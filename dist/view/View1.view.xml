@@ -1,0 +1,17 @@
+<mvc:View controllerName="barcodetest.project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+   <Page title="Barcode Scanner">
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <Label text="Scanned Result:" />
+                <Input id="idBarcodeField" placeholder="Scan result will appear here" />
+                <Button 
+                    text="Scan" 
+                    icon="sap-icon://bar-code" 
+                    press="onScan" 
+                    type="Emphasized" />
+            </VBox>
+        </content>
+        </Page>
+</mvc:View>

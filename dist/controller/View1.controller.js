@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ndc/BarcodeScanner","sap/m/MessageToast"],(e,n,c)=>{"use strict";return e.extend("barcodetest.project1.controller.View1",{onInit(){},onScan:function(){n.scan(function(e){debugger;if(!e.cancelled){this.getView().byId("idBarcodeField").setValue(e.text);c.show("Scan successful: "+e.format)}else{c.show("Scanning cancelled.")}}.bind(this),function(e){c.show("Scanning failed: "+e)},function(e){})}})});
+//# sourceMappingURL=View1.controller.js.map
