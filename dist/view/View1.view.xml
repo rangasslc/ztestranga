@@ -11,6 +11,7 @@
                     icon="sap-icon://bar-code" 
                     press="onScan" 
                     type="Emphasized" />
+                    <Label text="New Lable test"></Label>
             </VBox>
         </content>
         </Page>
